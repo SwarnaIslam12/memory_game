@@ -25,8 +25,13 @@ const Card = ({ foods, score, best, clickSuccess, clickFailed }) => {
         <h2 class="text-end">Best score: {best}</h2>
       </div>
       <div
-        className="d-flex justify-content-center flex-row flex-wrap"
-        style={{ marginTop: "100px" }}
+        className=""
+        style={{
+          marginTop: "100px",
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+        }}
       >
         {foods.map((food) => {
           return (

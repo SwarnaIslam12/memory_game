@@ -18,8 +18,14 @@ const Card = ({ foods, score, best, clickSuccess, clickFailed }) => {
   return (
     <>
       <div
-        className="text-end header"
-        style={{ position: "absolute", top: "0px", right: "0px", left: 0 }}
+        className="header"
+        style={{
+          position: "fixed",
+          top: "0px",
+          right: "0px",
+          left: 0,
+          height: "100px",
+        }}
       >
         <h2 class="text-end">Score: {score}</h2>
         <h2 class="text-end">Best score: {best}</h2>
